@@ -1,0 +1,64 @@
+#Field {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(189, 164, 185);
+    margin: 0 auto;
+    border: 5px solid rgb(83, 8, 129);
+    margin-top: 50px;
+}
+#start{
+    border-radius: 5px;
+    padding: 8px;
+    color:rgb(182, 126, 7);
+    background-color: rgb(32, 11, 116);
+    font-size: 25px;
+}
+#player1,
+#player2 {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: rgb(5, 13, 101);
+}
+body{
+    background-color: rgb(16, 107, 183);
+}
+#player1 {
+    left: 0px;
+    top: 150px;
+}
+
+#player2 {
+    right: 0px;
+    top: 150px;
+}
+
+#ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(20, 179, 68);
+    border-radius: 50%;
+    left: 290px;
+    top: 190px;
+}
+
+#player1_points,
+#player2_points {
+    position: absolute;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#player1_points {
+    left: 200px;
+    top: 20px;
+    color: blue;
+}
+
+#player2_points {
+    right: 200px;
+    top: 20px;
+    color: blue;
+}
