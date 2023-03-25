@@ -72,6 +72,6 @@ function KeyDown(event) {
         moveright += 10;
     }
 }
-setInterval(update, 5); 
+setInterval(update, 18); 
 document.addEventListener('keydown', KeyDown);
 }
