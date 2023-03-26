@@ -1,0 +1,75 @@
+.view {
+    display: inline-block;
+    margin: 5px;
+    width: 90%;
+    margin-left:8px;
+    height: 35px;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    color:currentColor;
+    border-radius: 15px;
+    border-color:red;
+    border: 2px solid black;
+}
+
+.equalButton {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 110px;
+    outline: none;
+    margin-left: 11px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color:lightblue;
+    background-color:black;
+    color: white;
+
+}
+ 
+
+.btn,.allclearButton {
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px;
+    margin-right:12px ;
+    margin-left: 8px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: white;
+    outline: none;
+    background-color:black;
+    color:white;
+
+}
+.btn:hover,
+.equalButton:hover{
+    background-color: yellow;
+    
+
+}
+.allclearButton:hover {
+    background-color:black;
+    color:white;
+}
+.h1 {
+    text-align: center;
+    color:blueviolet;
+    font-size: 50px;   
+}
+.container {
+    width:300px;
+    background-color: rgb(141, 141, 141);
+    border: 3px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}

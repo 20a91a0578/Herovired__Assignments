@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    
+</head>
+<body>
+
+    <p id="paragraph" style="text-align:center">This is a Paragraph Content</p>
+    <br>
+  <center>  <button id="btn" >Mouse Moved Out</button></center>
+    <br><br>
+    <center>
+    <input type="text" id="inputtext"/>
+    <br><br>
+    <button id="btn2" >Click</button></center>
+    <br>
+    <h2>WEB DEVELPOMENT BASICS</h2>
+    <ol >
+        <li id="i1">HTML</li>
+        <li id="i2">CSS</li>
+        <li id="i3">JavaScript</li>
+    </ol>
+    <script>
+        //APPLYING DOM MANIPULATIONS ON PARAGRAPH ELEMENT
+        let j=document.getElementById("paragraph");
+        j.addEventListener('mouseover',()=>{j.style.color='red';})
+        j.addEventListener('mouseout',()=>{j.style.color='black'})
+
+        //APPLYING DOM MANIPULATIONS ON BUTTON TAG
+        let btn=document.getElementById("btn");
+        var original=btn.innerText;
+        btn.addEventListener('mouseover',()=>{btn.innerText="MOuse Moved Over"});
+        btn.addEventListener('mouseout',()=>{btn.innerText=original});
+
+        //APPLYING DOM MANIPULATIONS ON INPUT FIELDS.
+        var btn2=document.getElementById("btn2");
+        btn2.addEventListener('click',()=>{
+            document.getElementById("inputtext").value=j.innerHTML;
+        });
+
+        //APPLYING DOM MANIPULATIONS ON LIST ITEMS.
+        const k=document.querySelectorAll("li");
+       
+           k.forEach(element => {
+            element.addEventListener('mouseover',()=>{
+                element.style.fontWeight="bold";
+                element.style.color="RED";
+            });
+            element.addEventListener('mouseout',()=>{
+                element.style.fontWeight="";
+                element.style.color="black";
+            });
+           });
+        
+    </script>
+</body>
+</html>
