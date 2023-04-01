@@ -1,0 +1,114 @@
+body{
+	font-family: 'Times New Roman', Times, serif;
+    
+}
+#bgpic{
+	width: 100%;
+	margin: auto;
+	height: 1200px;
+	background-image:url('hell.jpg');
+	background-repeat: no-repeat;
+}
+.navbar{
+	align-items: center;
+	border-radius: 0px;
+    background-color: rgb(3,14,79);
+}
+
+.navbar-header h2{
+	font-family: monospace;
+	font-size: 20px;
+	color: rgb(244,159,28);
+}
+
+
+.main{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.card{
+	transition: margin-top 0.3s;
+	margin: 20px;
+	border-radius: 10px;
+	width: 300px;
+	height: 300px;
+}
+.cards{
+	display: none;
+}
+.card:hover > .cards{ 
+    display: block;
+	line-height: 60px;
+	font-family: monospace;
+	text-align: center;
+	background: black;
+	color: white;
+	border-radius: 10px;
+	padding-top: 10px;
+	height: 300px;
+	width: 300px;
+	opacity: 0.9;
+ }
+
+.fa1{
+    font-size: 100px;
+}
+button{
+    text-decoration: none;
+    border: 0px;
+    background-color: white;
+    size: 100px;
+}
+#car{
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:relative;
+}
+
+.title h4{
+	font-size: 25px;
+	font-family: serif;
+	text-align: center;
+}
+.title p{
+	font-size: 18px;
+	font-family: serif;
+	text-align: center;
+}
+
+.main .row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.main .row .p{
+	display: flex;
+	justify-content: space-around;
+	min-width: 500px;
+	margin: 10px;
+	width: 48%;
+	height: 420px;
+}
+.main .row .p img{
+	transition: opacity 0.5s;
+	opacity: 0.4;
+	width: 550px;
+	height: 400px;
+}
+
+.main .row .col-md-6 img:hover{
+	opacity: 10;
+}
+
+
+.main .row .m p{
+	font-size: 18px;
+	padding: 30px;
+	font-family: serif;
+}
+.main .row .m p span{
+	color: grey;
+}
+
+
